@@ -1,0 +1,154 @@
+body{
+    margin-bottom: 300px;
+}
+
+.outer-container{
+    background-color: pink;
+/* different units:
+
+px: fixed unit, inte relativt. Sätter vi 500px så är den alltid 500px
+regardless of window size
+
+relativa enheter: procent  % 
+meaning 50% is half of the "available space", hela fönstret
+har du halvt fönster är den 50% av fönstret
+
+
+auto: 
+takes up the whole available width -om ex höjden är satt till auto,
+"grows with content". Expanderar till förhållande till innehållet/sizen till fönstret
+Automatiskt alltid auto.
+*/
+width: auto;
+height: 300px;
+
+}
+
+.inner-container{
+    background-color: tomato;
+    border: 5px solid;
+}
+
+.width-px{
+    width: 300px;
+}
+
+.width-procent{
+    width: 50%;
+}
+
+.width-auto{
+
+    width:auto;
+}
+
+.box-model{
+background-color: turquoise;
+width:auto; 
+height:300px;   
+
+padding-top: 30px;
+padding-right: 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+
+padding: 10px 10px; 
+}
+/* a short 1 size for all sides
+padding: 30px */
+
+/* Margin: controls the spacing outside of an element
+vilket avstånd det har mellan andra objekt */
+
+.box-model{
+
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+
+}
+
+.box-model{
+    border-style: solid;
+    border-width: 20;   
+    border-color: teal;
+}
+/* Border: specify one element's border
+brukar vara style, width, color S W C
+ */
+
+ .center-container{
+width: 300px;
+height: 300px;
+background-color: steelblue;
+
+/* margin-left: 35%;
+margin-right: auto;  =   */
+
+margin: 20px auto;
+ }
+
+ /* Display: Block vs inline vs inline block */
+/* Block: always takes up whole row, whole width
+forcing, elements after it to be placed beneath */
+ 
+.block1{
+     background-color: gold;
+     width: 100px;
+     height: 100px;
+ }
+
+ .block2{
+     background-color: purple;
+     width: 300px;
+     height: 300px;
+ }
+
+ /* inline: inline från W3 schools
+ an inline block doesn't take up the whole row, 
+ allowing other elements to be placed besides it
+ It is NOT effected by properties that manipulates 
+ width and height  -SPAN, växer inte trots W and H
+ 
+ display: inline , kollapsar helt och hållet -måste ha en text*/
+
+ .span1{
+     width: 100px;
+     height: 100px;
+     background-color: hotpink;
+ }
+
+ .inline-block1{
+    width: 100px;
+    height: 100px;
+    background-color: maroon;
+}
+
+.inline-block2{
+    width: 100px;
+    height: 100px;
+    background-color: mediumaquamarine;
+}
+
+.box1{
+background-color: rgb(255, 255, 0);
+width: 150px;
+height: 150px;
+float:left;
+
+}
+.box2{
+background-color: rgba(205, 0, 0, 0.906);
+width: 100px;
+height: 100px;
+float:left;
+
+}
+.box3{
+    background-color: rgba(0, 65, 206, 0.906);
+    width: 50px;
+    height: 50px;
+    float:left;
+    
+    }
